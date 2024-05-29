@@ -1,0 +1,155 @@
+/* My Style in my Register.html */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.btnI{
+    width: 240px;
+    height: 40px;
+    background: #f3872c;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0,4s ease;
+}
+
+.btnI:hover{
+    background: #f3872c;
+    color: #ffb464;
+}
+
+.btnI .aI{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+
+.ulR{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulR .liR{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size:  22px;
+
+}
+
+.ulR .liR .aR{
+    text-decoration: none;
+    color: #c7b355;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.ulR .liR .aR:hover{
+    color: #c7b355;
+}
+
+.iconR{
+    width: 200px;
+    float: right;
+    height: 70px;
+}
+
+.logoR{
+    color: #c7b355;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 37px;
+    padding-top: 30px;
+
+}
+
+
+.mainR{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../Styles/../images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.formR{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background:transparent;
+}
+
+.formR .formRe{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(218 163 26);
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    text-align: center;
+    width: 500px;
+}
+
+.formR .formRe h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:gray;
+}
+
+.formR .formRe .error-msg{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px 0;
+    border-radius: 5px 5px;
+    color: red;
+    padding: 10px;
+}
+
+.formR .formRe .inputR{
+    width: 100%;
+    padding: 16px 7px;
+    font-size: 17px;
+    background:rgb(255 7 7 / 33%); 
+    color: rgba(252, 252, 252, 0.781);
+    border-radius: 8px;
+    border-bottom: 1px solid #ffb0b0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.formR .formRe .inputR:focus{
+    outline: none;
+}
+
+.formR .formRe select option:focus{
+    background: none;
+    outline: none;
+}
+
+.formR .formRe p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.formR .formRe p a{
+    color: red;
+}

@@ -1,0 +1,79 @@
+<!----------
+
+
+
+    <?php
+    
+    @include 'config.php';
+    
+    session_start();
+    
+    if(isset( $_POST['sumbit'])){
+    
+        $email = mysqli_real_escape_string($conn, $_POST['Uemail']);
+        $pass = md5($_POST['password']);
+    
+        $select = " SELECT * FROM user_forn WHERE email = '$email' && password = '$pass'";
+    
+        $result = mysqli_query($conn,$select);
+    
+        if(mysqli_num_rows($result) > 0){
+          $_SESSION['Uemail'] = $email;
+          header('location:content.php');
+        }else{
+            $error[] = 'incorrect email or password';
+        }
+    
+    };
+    ?>
+
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Registerstyl.css">
+</head>
+<body class="mainR">
+        <div class="navbarR">
+    
+            <div class="menuR">
+                <ul class="ulR">
+                    <li class="liR"><a class="aR" href="register.html">Back</a></li>
+                </ul>
+            </div>
+    
+        </div>
+        <div class="formR">
+    
+            <form action="" method="post" class = formRe>
+                <h3>Log-in</h3>
+
+                <!-------
+                
+                    <?php
+                      
+                      if(isset($error)){
+                        foreach($error as $error){
+                            echo '<span class="error-msg">'.$error.'</span>';
+                        }
+                      }
+                    
+                    ?>
+                -->
+    
+                <input type="email" name="Uemail" placeholder="Email" class ="inputR" required>
+                <input type="password" name="password" placeholder="Password"class ="inputR" required>
+                <input type="submit" value = "login now" name="sumbit" class = "btnI">
+    
+            </form>
+        </div>
+</body>
+</html>     
